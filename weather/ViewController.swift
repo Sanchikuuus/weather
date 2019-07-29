@@ -22,6 +22,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+//        let baseURL = URL(string: "https://api.darksky.net/forecast/8ceb75b92983c3e34fc681d0539183ab/") //base URL for getting data
+//        let fullURL = URL(string: "37.8267,-122.4233", relativeTo: baseURL) // full URL, adding location to base URL
+//        
+//        let sessionConfiguration = URLSessionConfiguration.default
+//        let session = URLSession(configuration: sessionConfiguration)
+//
+//        let request = URLRequest(url: fullURL!)
+//        let dataTask = session.dataTask(with: fullURL!) { (data, response, error) in
+//
+//        } // get data
+//        dataTask.resume() //
     }
     
     private func updateUIWith(_ currentWeather: CurrentWeather) {
