@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     }
     
     private func updateUIWith(_ currentWeather: CurrentWeather) {
-        imageView.image = currentWeather.icon
+        imageView.image = UIImage(named: currentWeather.icon)
         presureLabel.text = currentWeather.presureString
         temperatureLabel.text = currentWeather.temperatureString
         apparentTemperatureLabel.text = currentWeather.apparentTemperatureString
@@ -36,9 +36,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func refreshButtonTapped(_ sender: Any) {
-       
-       
+       let manager = APIWeatherManager()
+        manager.getData()
     }
-    
 }
 
